@@ -26,6 +26,7 @@ grep -A 1 'BUNDLED WITH' subdir/Gemfile.lock
 # Now go back to the parent directory, reset the lockfile and run bundle update again
 cd ..
 git checkout -- subdir/Gemfile.lock
+bundle update pry
 grep -A 1 'BUNDLED WITH' subdir/Gemfile.lock
 # BUNDLED WITH
 #    2.0.2
